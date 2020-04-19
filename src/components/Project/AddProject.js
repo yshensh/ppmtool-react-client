@@ -1,4 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { createProject } from "../../actions/projectAction";
+
 
 class AddProject extends Component {
     constructor(){
@@ -37,6 +41,7 @@ class AddProject extends Component {
 
         // POC - can be wired to backend server
         console.log(newProject);
+        this.props.createProject(newProject, this.props.history);
     }
 
 
@@ -129,4 +134,11 @@ class AddProject extends Component {
     }
 }
 
-export default AddProject;
+AddProject.propTypes = {
+    createProject: PropTypes.func.isRequired
+}
+
+export default connect (
+    null,
+    { createProject }
+) (AddProject);
