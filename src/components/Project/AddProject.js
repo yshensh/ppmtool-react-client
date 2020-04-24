@@ -91,7 +91,7 @@ class AddProject extends Component {
                                             value={this.state.projectIdentifier}
                                             onChange={this.onChange}
                                         />
-                                        {errors.projectName && (
+                                        {errors.projectIdentifier && (
                                             <div className="invalid-feedback">
                                                 {errors.projectIdentifier}
                                             </div>
