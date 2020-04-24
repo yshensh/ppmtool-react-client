@@ -70,7 +70,12 @@ class AddProject extends Component {
                                     <div className="form-group">
                                         <input
                                             type="text"
-                                            className={classnames("form-control form-control-lg", {"is-invalid": errors.projectName})}
+                                            className={
+                                                classnames(
+                                                    "form-control form-control-lg",
+                                                    {"is-invalid": errors.projectName}
+                                                )
+                                            }
                                             placeholder="Project Name"
                                             name = "projectName"
                                             value={this.state.projectName}
@@ -85,7 +90,12 @@ class AddProject extends Component {
                                     <div className="form-group">
                                         <input
                                             type="text"
-                                            className={classnames("form-control form-control-lg", {"is-invalid": errors.projectIdentifier})}
+                                            className={
+                                                classnames(
+                                                    "form-control form-control-lg",
+                                                    {"is-invalid": errors.projectIdentifier}
+                                                )
+                                            }
                                             placeholder="Unique Project ID"
                                             name="projectIdentifier"
                                             value={this.state.projectIdentifier}
@@ -99,7 +109,12 @@ class AddProject extends Component {
                                     </div>
                                     <div className="form-group">
                                         <textarea
-                                            className={classnames("form-control form-control-lg", {"is-invalid": errors.description})}
+                                            className={
+                                                classnames(
+                                                    "form-control form-control-lg",
+                                                    {"is-invalid": errors.description}
+                                                )
+                                            }
                                             placeholder="Project Description"
                                             name="description"
                                             value={this.state.description}
