@@ -10,6 +10,7 @@ export default function(state=initialState, action) {
 
         case GET_BACKLOG:
             return {
+                // spread operator
                 ...state,
                 proejct_tasks: action.payload
             }
