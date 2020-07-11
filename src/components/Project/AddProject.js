@@ -47,9 +47,6 @@ class AddProject extends Component {
             start_date: this.state.start_date,
             end_date: this.state.end_date
         }
-
-        // POC - can be wired to backend server
-        console.log(newProject);
         this.props.createProject(newProject, this.props.history);
     }
 
@@ -163,7 +160,7 @@ class AddProject extends Component {
 
 AddProject.propTypes = {
     createProject: PropTypes.func.isRequired,
-    erros: PropTypes.object.isRequired
+    errors: PropTypes.object.isRequired
 }
 
 const mapStateToProps = state =>({
