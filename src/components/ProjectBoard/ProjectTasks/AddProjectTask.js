@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import {connect} from "react-redux";
 import classnames from "classnames";
 import {addProjectTask} from "../../../actions/backlogActions";
-import ProtoTypes from "prop-types";
+import PropTypes from "prop-types";
 
 class AddProjectTask extends Component {
 
@@ -150,9 +150,9 @@ class AddProjectTask extends Component {
     }
 }
 
-AddProjectTask.prototypes = {
-    addProjectTask: ProtoTypes.func.isRequired,
-    errors: ProtoTypes.object.isRequired
+AddProjectTask.propTypes = {
+    addProjectTask: PropTypes.func.isRequired,
+    errors: PropTypes.object.isRequired
 };
 
 const mapStateToProps = state => ({
