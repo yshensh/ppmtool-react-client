@@ -23,8 +23,12 @@ export default function(state=initialState, action) {
 
         case DELETE_PROJECT_TASK:
             return {
-                ...state
-            }
+                ...state,
+                // this makes delete action will auto refresh board afterwards
+                project_tasks: state.project_tasks.filter(
+                    project_task => project_task.projectSequence !== action.payload
+                )
+            };
 
         default:
             return state;
