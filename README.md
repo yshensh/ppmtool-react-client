@@ -32,7 +32,7 @@ To build the app properly for local test or production, please update the follow
 - [local] `"proxy": "http://localhost:8080"`
 - [Heroku] `"https://ppmtool-demo.herokuapp.com/"` (for example)
 
-If you are going to deploy frontend app with backend app to Heroku, you will need to copy all files under `build` directory to Spring backend code directory`src/main/resources/static`.
+If you are going to deploy frontend app with backend app to Heroku, you will need to copy all files under `build` directory to Spring backend code directory `src/main/resources/static`.
 
 ### Learn More
 
