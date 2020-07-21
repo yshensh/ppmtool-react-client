@@ -1,8 +1,8 @@
-## ppmtool backend server
+## ppmtool frontend app
 Frontend server for [Personal Project Management Tool](https://github.com/yshensh/ppmtool-heroku) <br />
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) <br />
 
-## Local Development Setup
+### Local Development Setup
 IDE: Visual Studio Code <br />
 Web Browser: Chrome (React Developer Tools , Redux DevTools) <br />
 Programming Languagel: NodeJS, CSS, html <br />
